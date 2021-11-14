@@ -1,7 +1,12 @@
-[Stephen's GitHub Banner](./assets/banner.png)
-
+# 
+![Stephen's GitHub Banner](./assets/banner.png)
 
 ### Hi there 👋
+
+## Github Stats
+![Stephen's GitHub stats](https://github-readme-stats.vercel.app/api?username=stphnwlsh&show_icons=true)
+
+![Stephen's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=stphnwlsh&layout=compact)
 
 <!--
 **stphnwlsh/stphnwlsh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
