@@ -6,7 +6,7 @@
 -->
 <a href="https://movember.com/m/stephenwalsh"><img src="./brand/banners/movember/movember-github-readme-1280x320.png" alt="Stephen Walsh is growing a mo for Movember. Please give at movember.com/m/stephenwalsh" width="100%"></a>
 
-## G'day, I'm Stephen
+## Hello, I'm Stephen
 
 **Husband · Father · Software Engineer · Mentor · Learner · Leader**
 
@@ -32,6 +32,6 @@ This November the razor is on holiday while I grow a mo for [Movember](https://m
 
 ## Find me elsewhere
 
-[LinkedIn](https://www.linkedin.com/in/stphnwlsh/) · [Medium](https://stphnwlsh.medium.com/) · [stphnwlsh.github.io](https://stphnwlsh.github.io) · [Sponsor](https://github.com/sponsors/stphnwlsh)
+[LinkedIn](https://www.linkedin.com/in/stphnwlsh/) · [Medium](https://stphnwlsh.medium.com/) · [Personal Website](https://stphnwlsh.github.io) · [GitHub Sponsor](https://github.com/sponsors/stphnwlsh)
 
 <sub>The banner, avatars and the rest of the look live in my [brand kit](./brand). Yes, even my face has a build script.</sub>
