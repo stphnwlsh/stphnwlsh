@@ -215,6 +215,34 @@ function post(key, p) {
 </svg>`;
 }
 
+// Medium profile headers. Medium shows the name, photo and bio itself, so the header carries no face and no name:
+// just the tagline (or the Movember ask) and the rings. Medium fills a wide, short strip that phones crop to the
+// middle, so everything sits in the centre third. Shown about 1160px wide on a desktop.
+const MEDIUM = { w: 3000, h: 450, shown: 1160 };
+function mediumHeader(theme) {
+  const t = THEMES[theme], { w: W, h: H } = MEDIUM, cx = W / 2, k = MEDIUM.shown / W;
+  const mo = theme === 'movember';
+  const ringSet = x => [0.9, 1.25, 1.6].map((r, i) => `<circle cx="${x}" cy="${H / 2}" r="${H * r / 2}" fill="none" stroke="${t.ring}" stroke-opacity="${0.10 - i * 0.02}" stroke-width="4"/>`).join('');
+  let body, sizes;
+  if (mo) {
+    sizes = [['"Growing a mo for Movember"', 92, TARGET.name / 2], ['the ask', 46, TARGET.tagline], ['the moustache', 0, 0]];
+    body = `${MO(cx - 75, 100, 150, t.handle)}
+  <text x="${cx}" y="${H / 2 + 25}" text-anchor="middle" font-family="Instrument Serif" font-size="92" fill="${t.ink}">Growing a mo for Movember</text>
+  <text x="${cx}" y="${H / 2 + 105}" text-anchor="middle" font-family="Inter" font-weight="600" font-size="46" fill="${t.handle}">Please give: ${esc(DONATE_LABEL)}</text>`;
+  } else {
+    const c = chip(cx, 110, 36, HANDLE, t, 'middle');
+    sizes = [['handle', 36, TARGET.small], ...TAGLINE.two.map(l => [`"${l}"`, 56, TARGET.tagline])];
+    body = `${c.svg}
+  ${TAGLINE.two.map((l, i) => `<text x="${cx}" y="${250 + i * 76}" text-anchor="middle" font-family="Inter" font-weight="600" font-size="56" fill="${t.tagline}">${esc(l)}</text>`).join('\n  ')}`;
+  }
+  checkSizes(`medium-header (${theme})`, MEDIUM, sizes.filter(([, s]) => s));
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <rect width="100%" height="100%" fill="${t.bg}"/>
+  ${ringSet(W * 0.12)}${ringSet(W * 0.88)}
+  ${body}
+</svg>`;
+}
+
 const render = (svg, file, width) => writeFileSync(file, new Resvg(svg, {
   font: fontOpts,
   fitTo: width ? { mode: 'width', value: width } : { mode: 'original' },
@@ -230,6 +258,9 @@ for (const look of LOOKS.filter(l => l !== 'movember')) for (const theme of ['pa
 }
 mkdirSync(at('banners/movember'));
 for (const [key, sz] of Object.entries(SIZES)) render(banner(key, sz, 'movember', 'movember'), at(`banners/movember/movember-${key}.png`));
+
+mkdirSync(at('banners/medium'));
+for (const theme of ['navy', 'paper', 'movember']) render(mediumHeader(theme), at(`banners/medium/medium-header-${theme}-3000x450.png`));
 
 fresh('movember-posts');
 for (const [key, p] of Object.entries(POSTS)) render(post(key, p), at(`movember-posts/movember-${key}.png`));
