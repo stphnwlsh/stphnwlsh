@@ -1,4 +1,4 @@
-<img src="./banners/stubble-paper/stubble-paper-github-readme-1280x320.png" alt="Stephen Walsh. Husband, father, software engineer, maintainer, learner, leader." width="100%">
+<img src="./banners/stubble-paper/stubble-paper-github-readme-1280x320.png" alt="Stephen Walsh. Husband, father, software engineer, mentor, learner, leader." width="100%">
 
 # Brand kit
 
@@ -23,8 +23,8 @@ Swap `<look>` for one of the keys above and `<theme>` for `paper` (light) or `na
 | Where | File |
 | --- | --- |
 | GitHub, Medium, Gravatar, NuGet and most other profile pictures | `avatars/profile/<look>-<theme>-512.png` |
-| GitHub profile README | `banners/<look>-<theme>/<look>-<theme>-github-readme-1280x320.png` |
-| LinkedIn banner | `banners/<look>-<theme>/<look>-<theme>-linkedin-1584x396.png` |
+| GitHub profile README | `banners/<look>-paper/…-github-readme-1280x320.png` and `banners/<look>-navy/…-github-readme-1280x320.png` together in a `<picture>`, so dark mode gets navy (see the profile README) |
+| LinkedIn banner | `banners/<look>-navy/<look>-navy-linkedin-1584x396.png` (paper melts into LinkedIn's off-white page) |
 | X and Bluesky header | `banners/<look>-<theme>/<look>-<theme>-social-header-1500x500.png` |
 | Link previews (Open Graph) | `banners/<look>-<theme>/<look>-<theme>-social-card-1200x630.png` |
 | November, any of the above | `banners/movember/movember-<size>.png` |
@@ -33,6 +33,18 @@ Swap `<look>` for one of the keys above and `<theme>` for `paper` (light) or `na
 | Website | `avatars/webp/`, `avatars/transparent/`, `logos/`, `tokens/tokens.css` |
 
 LinkedIn, X and Bluesky park the profile photo over the bottom left of the banner, so those banners keep their words further to the right.
+
+## Sizing
+
+Every site shrinks its banner, so the type is sized for the screen, not the file. Each size in `build/build.mjs` records roughly how wide it's shown on a desktop (GitHub about 840px, LinkedIn 800, X and Bluesky 600, link previews 500), and the build stops with an error if any text would land under these sizes on screen:
+
+| Text | At least |
+| --- | --- |
+| Name | 36px |
+| Tagline and Movember headline | 16px |
+| Handle, site address and the Movember link | 12px |
+
+The wide banners run the tagline as two lines of three. The X/Bluesky header and the link card are taller, so they get three lines of two at a bigger size. Phones shrink everything again, and that's fine: by then the face and name are doing the work.
 
 ## Colours
 
@@ -57,7 +69,7 @@ The same values live in [`tokens/tokens.json`](./tokens/tokens.json) (the build 
 
 - **Instrument Serif** for the name and headlines.
 - **Inter** for everything else. The tagline is Inter SemiBold.
-- **JetBrains Mono** for the `@stphnwlsh` handle.
+- **JetBrains Mono** for the `@stphnwlsh` handle chip (SemiBold, on a soft tint of the handle blue) and the site address.
 
 All three are free under the SIL Open Font License. Copies of the fonts and their licences are in [`build/fonts/`](./build/fonts).
 
@@ -66,14 +78,14 @@ All three are free under the SIL Open Font License. Copies of the fonts and thei
 - **Name:** Stephen Walsh
 - **Handle:** `@stphnwlsh` everywhere. No vowels were harmed; they just weren't invited.
 - **LinkedIn headline:** Software Engineering Leader
-- **Tagline:** Husband · Father · Software Engineer · Maintainer · Learner · Leader. On banners it splits after "Software Engineer".
-- **GitHub bio:** Husband · Father · Software Engineer · Maintainer · Learner · Leader. Occasional moustache caretaker, long-suffering Liverpool fan.
+- **Tagline:** Husband · Father · Software Engineer · Mentor · Learner · Leader. The wide banners split it after "Software Engineer"; the X/Bluesky header and the link card use three lines of two.
+- **GitHub bio:** Husband · Father · Software Engineer · Mentor · Learner · Leader. Occasional moustache caretaker, long-suffering Liverpool fan.
 - **Short bio:** Software engineering leader in Neenah, Wisconsin. I like solving problems and thinking about more than just the code.
 - **Longer bio:** I'm a software engineer and engineering leader in Neenah, Wisconsin, by way of Australia. My favourite spot is where leading teams meets staying hands-on in the code: helping engineers grow while still caring about how the software is put together. In my spare time I tinker with [Lean Mean Clean Apps](https://leanmeancleanapps.github.io), a small family of `dotnet new` templates with a low-ceremony take on Clean Architecture. Outside of work I'm a husband and father first, a Movember regular (the moustache only visits in November) and a devoted Liverpool supporter.
 
 ## Movember
 
-Donations go to [movember.com/m/stephenwalsh](https://movember.com/m/stephenwalsh). Every Movember banner and post asks people to "Please give" with that link and a "Scan to give" QR code pointing at it. Before each November, bump `movemberYear` in `tokens/tokens.json` and rebuild.
+Donations go to [movember.com/m/stephenwalsh](https://movember.com/m/stephenwalsh). Every Movember banner and post asks people to "Please give" in the handle blue, the loudest line after the name. Where the image can't be clicked there's a "Scan to give" QR code too, 48px from the words. The GitHub README banner skips it, because the whole banner is the link. The posts keep their footers clear of Instagram's reply bar and Facebook's profile photo. Before each November, bump `movemberYear` in `tokens/tokens.json` and rebuild.
 
 ## Rebuilding
 
@@ -86,7 +98,7 @@ python3 brand/build/logos.py                 # SW monogram and favicon SVGs
 cd brand/build && npm ci && npm run build    # banners, Movember posts, QR code, PNG icons
 ```
 
-The build wipes and rewrites `banners/` and `movember-posts/`, so change the scripts or the tokens, not the PNGs.
+The build wipes and rewrites `banners/` and `movember-posts/`, so change the scripts or the tokens, not the PNGs. If a change pushes any text under the on-screen sizes above, or a QR code into the avatar, the build stops and says which banner.
 
 ## About the art
 

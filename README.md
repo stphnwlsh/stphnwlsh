@@ -1,14 +1,14 @@
-<!-- November: the Movember banner. From 1 December, swap in whichever look the mirror agrees with, e.g.
+<!-- November: the Movember banner. The rest of the year: whichever look the mirror agrees with, paper in light mode and navy in dark mode, e.g.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./brand/banners/stubble-navy/stubble-navy-github-readme-1280x320.png">
-  <img src="./brand/banners/stubble-paper/stubble-paper-github-readme-1280x320.png" alt="Stephen Walsh. Husband, father, software engineer, maintainer, learner, leader." width="100%">
+  <img src="./brand/banners/stubble-paper/stubble-paper-github-readme-1280x320.png" alt="Stephen Walsh. Husband, father, software engineer, mentor, learner, leader." width="100%">
 </picture>
 -->
 <a href="https://movember.com/m/stephenwalsh"><img src="./brand/banners/movember/movember-github-readme-1280x320.png" alt="Stephen Walsh is growing a mo for Movember. Please give at movember.com/m/stephenwalsh" width="100%"></a>
 
 ## G'day, I'm Stephen
 
-**Husband · Father · Software Engineer · Maintainer · Learner · Leader**
+**Husband · Father · Software Engineer · Mentor · Learner · Leader**
 
 I'm a software engineering leader in Neenah, Wisconsin, by way of Australia. I like solving problems and thinking about more than just the code. I've been an engineer for a while and I still love it. I didn't spend most of my career sharing my work, so I'm making up for lost time. I hope something here helps you.
 
