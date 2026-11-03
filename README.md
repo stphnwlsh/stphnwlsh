@@ -12,7 +12,7 @@
 
 I'm a software engineering leader in Neenah, Wisconsin, by way of Australia. I like solving problems and thinking about more than just the code. I've been an engineer for a while and I still love it. I didn't spend most of my career sharing my work, so I'm making up for lost time. I hope something here helps you.
 
-This November the razor is on holiday while I grow a mo for [Movember](https://movember.com/m/stephenwalsh). If you'd like to help change the face of men's health, every donation counts, and the mo needs all the encouragement it can get.
+This November the razor is on holiday while I grow a mo for [Movember](https://movember.com/m/stephenwalsh). I've got more than one reason: my Dad, who won his fight against prostate cancer, my friend Bryan, who's in remission after his, and Derrick and Sean, who went far too soon. If you'd like to help change the face of men's health, every donation counts, and the mo needs all the encouragement it can get.
 
 ## What I tinker with
 
