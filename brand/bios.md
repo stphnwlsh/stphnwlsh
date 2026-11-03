@@ -6,9 +6,11 @@ One set of words in four lengths, so every profile says the same thing at the ri
 | --- | --- |
 | Tagline | Banners, the website hero, the X and Bluesky display line |
 | Short | GitHub bio, Medium, X, Bluesky, Instagram, anywhere with a character limit (it's 151) |
-| Medium | The profile README intro, LinkedIn About opener, conference blurbs |
-| Long | The website's About, LinkedIn About, speaker pages, anywhere that asks for a full bio |
+| Medium | The profile README intro, conference blurbs |
+| Long | The website's About, speaker pages, anywhere that asks for a full bio |
 | Why I grow a mo | Only where Movember is the topic: the website in November, the README's Movember line, the Movember page |
+
+LinkedIn's About and the GitHub Sponsors page say more than a bio, so their words live in [profiles/](profiles/README.md).
 
 ## Tagline
 
