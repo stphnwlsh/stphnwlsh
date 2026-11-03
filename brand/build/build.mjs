@@ -39,15 +39,17 @@ const THEMES = {
 };
 const COPY = {
   everyday: { kicker: `@${tokens.person.handle}`, lines: tokens.person.tagline },
-  movember: { kicker: `@${tokens.person.handle} · Movember ${YEAR}`, lines: ['Growing a mo for Movember'], note: `Donate: ${DONATE_LABEL}` },
+  movember: { kicker: `@${tokens.person.handle} · Movember ${YEAR}`, lines: ['Growing a mo for Movember'], note: `Please give: ${DONATE_LABEL}` },
 };
 
 // tx/ty: text block anchor. ax/ah: avatar centre x and height. s: type scale. qr: Movember QR tile.
 // LinkedIn and X/Bluesky put the profile photo over the bottom left, so the text starts further in there.
+// The three wide banners show small on screen, so their handle, tagline and link get a few extra points.
+const WIDE = { kick: 2, line: 5, note: 2 };
 const SIZES = {
-  'github-readme-1280x320': { w: 1280, h: 320, tx: 64,  ty: 160, ax: 1090, ah: 340, s: 1.0,  qr: { x: 742,  y: 86,  size: 132 } },
-  'linkedin-1584x396':      { w: 1584, h: 396, tx: 520, ty: 185, ax: 1400, ah: 430, s: 1.2,  qr: { x: 1080, y: 110, size: 150 } },
-  'social-header-1500x500': { w: 1500, h: 500, tx: 440, ty: 240, ax: 1330, ah: 470, s: 1.3,  qr: { x: 1000, y: 150, size: 170 } },
+  'github-readme-1280x320': { w: 1280, h: 320, tx: 64,  ty: 160, ax: 1090, ah: 340, s: 1.0,  plus: WIDE, qr: { x: 742,  y: 86,  size: 132 } },
+  'linkedin-1584x396':      { w: 1584, h: 396, tx: 520, ty: 185, ax: 1400, ah: 430, s: 1.2,  plus: WIDE, qr: { x: 1080, y: 110, size: 150 } },
+  'social-header-1500x500': { w: 1500, h: 500, tx: 410, ty: 240, ax: 1330, ah: 470, s: 1.3,  plus: WIDE, qr: { x: 1000, y: 150, size: 170 } },
   'social-card-1200x630':   { w: 1200, h: 630, tx: 72,  ty: 250, ax: 960,  ah: 640, s: 1.35, qr: { x: 72,   y: 410, size: 150 } },
 };
 
@@ -59,7 +61,7 @@ async function qrPath() {
 function qr(x, y, size, caption, captionColor, k) {
   const pad = size * 0.08, sc = (size - pad * 2) / QR.n;
   return `<g>
-    <rect x="${x}" y="${y}" width="${size}" height="${size}" rx="${size * 0.06}" fill="#FFFFFF"/>
+    <rect x="${x}" y="${y}" width="${size}" height="${size}" rx="${size * 0.06}" fill="${C.navyMuted}"/>
     <g transform="translate(${x + pad} ${y + pad}) scale(${sc})"><path d="${QR.d}" stroke="${C.movemberNavy}" fill="none" shape-rendering="crispEdges"/></g>
     ${caption ? `<text x="${x + size / 2}" y="${y + size + 18 * k}" text-anchor="middle" font-family="Inter" font-weight="600" font-size="${13 * k}" fill="${captionColor}">${esc(caption)}</text>` : ''}
   </g>`;
@@ -68,7 +70,8 @@ function qr(x, y, size, caption, captionColor, k) {
 function banner(sz, theme, copyKey, look) {
   const t = THEMES[theme], c = COPY[copyKey], k = sz.s;
   const ah = Math.min(sz.ah, sz.h);
-  const kick = 15 * k, name = 64 * k, line = 24 * k, gap = 8 * k, note = 17 * k;
+  const p = sz.plus ?? { kick: 0, line: 0, note: 0 };
+  const kick = (15 + p.kick) * k, name = 64 * k, line = (24 + p.line) * k, gap = 8 * k, note = (17 + p.note) * k;
   const linesH = c.lines.length * line + (c.lines.length - 1) * gap;
   const blockH = kick + 14 * k + name + 16 * k + linesH + (c.note ? 12 * k + note : 0);
   const yKick = sz.ty - blockH / 2 + kick;
@@ -86,7 +89,7 @@ function banner(sz, theme, copyKey, look) {
   <text x="${sz.tx - 2 * k}" y="${yName}" font-family="Instrument Serif" font-size="${name}" fill="${t.ink}">${esc(tokens.person.name)}</text>
   ${c.lines.map((l, i) => `<text x="${sz.tx}" y="${yLine(i)}" font-family="Inter" font-weight="600" font-size="${line}" fill="${t.tagline}">${esc(l)}</text>`).join('\n  ')}
   ${c.note ? `<text x="${sz.tx}" y="${yNote}" font-family="Inter" font-size="${note}" fill="${t.muted}">${esc(c.note)}</text>` : ''}
-  ${copyKey === 'movember' ? qr(sz.qr.x, sz.qr.y, sz.qr.size, 'Scan to donate', t.ink, k) : ''}
+  ${copyKey === 'movember' ? qr(sz.qr.x, sz.qr.y, sz.qr.size, 'Scan to give', t.ink, k) : ''}
 </svg>`;
 }
 
@@ -113,8 +116,8 @@ function post(key, p) {
     <text x="${x0}" y="${H / 2 - 30 * k}" font-family="Instrument Serif" font-size="${78 * k}" fill="${t.ink}">I'm growing a mo</text>
     <text x="${x0}" y="${H / 2 + 50 * k}" font-family="Instrument Serif" font-style="italic" font-size="${78 * k}" fill="${t.handle}">for Movember.</text>
     <text x="${x0}" y="${H / 2 + 105 * k}" font-family="Inter" font-size="${24 * k}" fill="${t.muted}">Help change the face of men's health.</text>
-    <text x="${x0}" y="${H / 2 + 150 * k}" font-family="Inter" font-weight="600" font-size="${24 * k}" fill="${t.ink}">${esc(DONATE_LABEL)}</text>
-    ${qr(qx, qy, qs, 'Scan to donate', t.ink, 1.4 * k)}
+    <text x="${x0}" y="${H / 2 + 150 * k}" font-family="Inter" font-weight="600" font-size="${24 * k}" fill="${t.ink}">Please give: ${esc(DONATE_LABEL)}</text>
+    ${qr(qx, qy, qs, 'Scan to give', t.ink, 1.4 * k)}
     <text x="${x0}" y="${H - 40}" font-family="JetBrains Mono" font-size="${18 * k}" fill="${t.handle}">${esc(sign)}</text>
   </svg>`;
   }
@@ -129,7 +132,7 @@ function post(key, p) {
   <text x="${cx}" y="${yT + 100 * k}" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="${84 * k}" fill="${t.handle}">for Movember.</text>
   <text x="${cx}" y="${yT + 160 * k}" text-anchor="middle" font-family="Inter" font-size="${26 * k}" fill="${t.muted}">Help change the face of men's health.</text>
   ${qr(cx - qs / 2, qy, qs, '', t.ink, k)}
-  <text x="${cx}" y="${qy + qs + 56 * k}" text-anchor="middle" font-family="Inter" font-weight="600" font-size="${26 * k}" fill="${t.ink}">Scan to donate · ${esc(DONATE_LABEL)}</text>
+  <text x="${cx}" y="${qy + qs + 56 * k}" text-anchor="middle" font-family="Inter" font-weight="600" font-size="${26 * k}" fill="${t.ink}">Scan to give · ${esc(DONATE_LABEL)}</text>
   <text x="${cx}" y="${H - (tall ? 140 : 48)}" text-anchor="middle" font-family="JetBrains Mono" font-size="${20 * k}" fill="${t.handle}">${esc(sign)}</text>
 </svg>`;
 }

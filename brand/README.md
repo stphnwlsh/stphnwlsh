@@ -1,4 +1,4 @@
-<img src="./banners/stubble-paper/stubble-paper-github-readme-1280x320.png" alt="Stephen Walsh. Husband, father, software engineer, learner, leader." width="100%">
+<img src="./banners/stubble-paper/stubble-paper-github-readme-1280x320.png" alt="Stephen Walsh. Husband, father, software engineer, maintainer, learner, leader." width="100%">
 
 # Brand kit
 
@@ -66,14 +66,14 @@ All three are free under the SIL Open Font License. Copies of the fonts and thei
 - **Name:** Stephen Walsh
 - **Handle:** `@stphnwlsh` everywhere. No vowels were harmed; they just weren't invited.
 - **LinkedIn headline:** Software Engineering Leader
-- **Tagline:** Husband · Father · Software Engineer · Learner · Leader. On banners it splits after "Father".
-- **GitHub bio:** Husband · Father · Software Engineer · Learner · Leader. Occasional moustache caretaker, long-suffering Liverpool fan.
+- **Tagline:** Husband · Father · Software Engineer · Maintainer · Learner · Leader. On banners it splits after "Software Engineer".
+- **GitHub bio:** Husband · Father · Software Engineer · Maintainer · Learner · Leader. Occasional moustache caretaker, long-suffering Liverpool fan.
 - **Short bio:** Software engineering leader in Neenah, Wisconsin. I like solving problems and thinking about more than just the code.
 - **Longer bio:** I'm a software engineer and engineering leader in Neenah, Wisconsin, by way of Australia. My favourite spot is where leading teams meets staying hands-on in the code: helping engineers grow while still caring about how the software is put together. In my spare time I tinker with [Lean Mean Clean Apps](https://leanmeancleanapps.github.io), a small family of `dotnet new` templates with a low-ceremony take on Clean Architecture. Outside of work I'm a husband and father first, a Movember regular (the moustache only visits in November) and a devoted Liverpool supporter.
 
 ## Movember
 
-Donations go to [movember.com/m/stephenwalsh](https://movember.com/m/stephenwalsh). Every Movember banner and post carries that link and a QR code pointing at it. Before each November, bump `movemberYear` in `tokens/tokens.json` and rebuild.
+Donations go to [movember.com/m/stephenwalsh](https://movember.com/m/stephenwalsh). Every Movember banner and post asks people to "Please give" with that link and a "Scan to give" QR code pointing at it. Before each November, bump `movemberYear` in `tokens/tokens.json` and rebuild.
 
 ## Rebuilding
 
