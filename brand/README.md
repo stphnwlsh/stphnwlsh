@@ -82,6 +82,7 @@ All three are free under the SIL Open Font License. Copies of the fonts and thei
 - **LinkedIn headline:** Software Engineering Leader
 - **Tagline:** Husband · Father · Software Engineer · Mentor · Learner · Leader. The wide banners split it after "Software Engineer"; the X/Bluesky header and the link card use three lines of two.
 - **Bios:** short, medium and long versions, plus why I grow a mo, live in [bios.md](bios.md). The GitHub bio is the short one.
+- **Profiles:** the LinkedIn About and the GitHub Sponsors page, with their settings, live in [profiles/](profiles/README.md). Change them there first, then paste them across.
 
 ## Movember
 
