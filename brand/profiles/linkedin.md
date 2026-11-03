@@ -26,6 +26,18 @@ Matches `person.headline` in [tokens.json](../tokens/tokens.json). If it changes
 
 Keep the Gradera paragraph to one sentence. The detail of how we work with AI belongs in the Gradera experience entry or a post, not here.
 
+## Top skills
+
+LinkedIn shows five under the About. Pick each one from LinkedIn's own list so recruiters' searches match it.
+
+1. Engineering Management
+2. Technical Leadership
+3. Software Architecture
+4. AI-Assisted Software Development (if LinkedIn doesn't offer it, use Generative AI)
+5. .NET
+
+Everything else (C#, AWS, Azure, Java, React, cloud cost optimisation, mentoring) goes in the full skills list and gets pinned to the jobs it was used in.
+
 ## Words we use about AI
 
 So every post and profile describes the work the same way:
