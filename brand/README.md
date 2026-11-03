@@ -79,9 +79,7 @@ All three are free under the SIL Open Font License. Copies of the fonts and thei
 - **Handle:** `@stphnwlsh` everywhere. No vowels were harmed; they just weren't invited.
 - **LinkedIn headline:** Software Engineering Leader
 - **Tagline:** Husband · Father · Software Engineer · Mentor · Learner · Leader. The wide banners split it after "Software Engineer"; the X/Bluesky header and the link card use three lines of two.
-- **GitHub bio:** Husband · Father · Software Engineer · Mentor · Learner · Leader. Occasional moustache caretaker, long-suffering Liverpool fan.
-- **Short bio:** Software engineering leader in Neenah, Wisconsin. I like solving problems and thinking about more than just the code.
-- **Longer bio:** I'm a software engineer and engineering leader in Neenah, Wisconsin, by way of Australia. My favourite spot is where leading teams meets staying hands-on in the code: helping engineers grow while still caring about how the software is put together. In my spare time I tinker with [Lean Mean Clean Apps](https://leanmeancleanapps.github.io), a small family of `dotnet new` templates with a low-ceremony take on Clean Architecture. Outside of work I'm a husband and father first, a Movember regular (the moustache only visits in November) and a devoted Liverpool supporter.
+- **Bios:** short, medium and long versions, plus why I grow a mo, live in [bios.md](bios.md). The GitHub bio is the short one.
 
 ## Movember
 
