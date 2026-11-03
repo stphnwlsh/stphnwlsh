@@ -1,0 +1,15 @@
+{
+  "name": "stphnwlsh-brand",
+  "private": true,
+  "description": "Builds Stephen Walsh's banners, cards, Movember posts and icons",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "qrcode": "1.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

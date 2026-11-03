@@ -1,0 +1,60 @@
+/* Stephen Walsh personal brand tokens. Same values as tokens.json. */
+:root {
+  /* palette */
+  --sw-paper: #F8F7F4;
+  --sw-paper-raised: #ECEAE2;
+  --sw-ink: #181816;
+  --sw-ink-muted: #5C5B57;
+  --sw-navy: #1A2238;
+  --sw-navy-raised: #222C47;
+  --sw-navy-muted: #A6B0C3;
+  --sw-movember-navy: #0E1B2A;
+  --sw-movember-raised: #1A3150;
+  --sw-rust: #8C4A32;
+  --sw-rust-on-dark: #D69A78;
+  --sw-blue: #3F6E9C;
+  --sw-blue-on-dark: #7CA9D4;
+
+  /* type */
+  --sw-font-serif: 'Instrument Serif', Georgia, serif;
+  --sw-font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --sw-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* roles: light is the default */
+  --sw-bg: var(--sw-paper);
+  --sw-surface: var(--sw-paper-raised);
+  --sw-text: var(--sw-ink);
+  --sw-muted: var(--sw-ink-muted);
+  --sw-handle: var(--sw-blue);
+  --sw-tagline: var(--sw-rust);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --sw-bg: var(--sw-navy);
+    --sw-surface: var(--sw-navy-raised);
+    --sw-text: var(--sw-paper);
+    --sw-muted: var(--sw-navy-muted);
+    --sw-handle: var(--sw-blue-on-dark);
+    --sw-tagline: var(--sw-rust-on-dark);
+  }
+}
+
+:root[data-theme="dark"] {
+  --sw-bg: var(--sw-navy);
+  --sw-surface: var(--sw-navy-raised);
+  --sw-text: var(--sw-paper);
+  --sw-muted: var(--sw-navy-muted);
+  --sw-handle: var(--sw-blue-on-dark);
+  --sw-tagline: var(--sw-rust-on-dark);
+}
+
+/* November only: the moustache gets its own colours */
+:root[data-theme="movember"] {
+  --sw-bg: var(--sw-movember-navy);
+  --sw-surface: var(--sw-movember-raised);
+  --sw-text: #FFFFFF;
+  --sw-muted: var(--sw-navy-muted);
+  --sw-handle: var(--sw-blue-on-dark);
+  --sw-tagline: var(--sw-blue-on-dark);
+}
