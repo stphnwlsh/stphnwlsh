@@ -277,4 +277,14 @@ for (const [name, hex] of Object.entries(C)) {
 const favicon = readFileSync(at('logos/favicon.svg'), 'utf8');
 for (const [size, file] of [[512, 'icon-512.png'], [180, 'apple-touch-icon.png'], [32, 'favicon-32.png']]) render(favicon, at(`logos/${file}`), size);
 
+// November's favicon: the same tile in Movember navy, with the moustache standing in for the monogram.
+const faviconMovember = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Stephen Walsh, growing a mo for Movember</title>
+  <rect width="512" height="512" rx="96" fill="${C.movemberNavy}"/>
+  ${MO(64, 195, 380, '#FFFFFF')}
+</svg>
+`;
+writeFileSync(at('logos/favicon-movember.svg'), faviconMovember);
+for (const [size, file] of [[512, 'icon-movember-512.png'], [180, 'apple-touch-icon-movember.png'], [32, 'favicon-movember-32.png']]) render(faviconMovember, at(`logos/${file}`), size);
+
 console.log('built');

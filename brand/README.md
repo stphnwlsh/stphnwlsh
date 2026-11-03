@@ -32,6 +32,7 @@ Swap `<look>` for one of the keys above and `<theme>` for `paper` (light) or `na
 | Facebook and Instagram in November | `movember-posts/` (no cartoon, just the ask and the QR code) |
 | Anywhere else that needs the donate link | `movember-posts/movember-donate-qr.svg` |
 | Website | `avatars/webp/`, `avatars/transparent/`, `logos/`, `tokens/tokens.css` |
+| Website favicon in November | `logos/favicon-movember.svg` and its PNGs (the moustache on Movember navy) |
 
 LinkedIn, X and Bluesky park the profile photo over the bottom left of the banner, so those banners keep their words further to the right.
 
