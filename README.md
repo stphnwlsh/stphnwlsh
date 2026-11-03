@@ -18,11 +18,17 @@ This November the razor is on holiday while I grow a mo for [Movember](https://m
 
 [Lean Mean Clean Apps](https://leanmeancleanapps.github.io) is a small family of `dotnet new` templates with a low-ceremony take on Clean Architecture: fewer layers than an onion, more than a sandwich.
 
-- [Clean Minimal API](https://github.com/LeanMeanCleanApps/CleanMinimalApi)
-- [Clean Model Context Protocol](https://github.com/LeanMeanCleanApps/CleanModelContextProtocol)
-- [Clean GraphQL API](https://github.com/LeanMeanCleanApps/CleanGraphQLApi)
-- [Clean Web API](https://github.com/LeanMeanCleanApps/CleanWebApi)
-- [Clean Lambda Function](https://github.com/LeanMeanCleanApps/CleanLambdaFunction)
+- [Clean Minimal API](https://github.com/LeanMeanCleanApps/CleanMinimalApi): an ASP.NET Core Minimal API
+- [Clean Model Context Protocol](https://github.com/LeanMeanCleanApps/CleanModelContextProtocol): an MCP server on the official C# SDK
+- [Clean GraphQL API](https://github.com/LeanMeanCleanApps/CleanGraphQLApi): a GraphQL API on Hot Chocolate
+- [Clean Web API](https://github.com/LeanMeanCleanApps/CleanWebApi): an ASP.NET Core Web API with controllers
+- [Clean Lambda Function](https://github.com/LeanMeanCleanApps/CleanLambdaFunction): an AWS Lambda function shipped as a container image
+
+## Things I've written
+
+- [Full Stack Engineers Don't Exist!](https://betterprogramming.pub/full-stack-engineers-dont-exist-37afb7a6b26c) in Better Programming
+- [Make Software Engineering Interviews More Creative](https://dev.to/stphnwlsh/making-software-engineering-interviews-more-creative-and-interesting-23ac)
+- [A Cleaner Startup for .NET 6's Minimal Approach](https://itnext.io/a-cleaner-startup-for-net-6s-minimal-approach-c1c05a672c6a) in ITNEXT, where the Clean Minimal API started
 
 ## Find me elsewhere
 
