@@ -12,15 +12,19 @@ Matches `person.headline` in [tokens.json](../tokens/tokens.json). If it changes
 
 ## About
 
-> Engineering leader with 20 years across .NET and C#, plus Java, Spring Boot, React and NestJS, on AWS, Azure and GCP. I've led large and small teams, driven cloud cost optimisation, and delivered back-end systems at scale across legal tech, food service, workflow automation and enterprise platforms, in both Australia and the United States.
+> Engineering leader with 20 years across the Microsoft stack (.NET, C#) plus Java, Spring Boot, React and NestJS, on AWS, Azure and GCP. I've led large and small engineering teams, driven cloud cost optimisation, and delivered back-end systems at scale in both ecosystems.
 >
 > At Gradera I lead a distributed team delivering a new multi-tenant product, where we've made AI-assisted, spec-driven development a team practice rather than a personal productivity trick.
 >
-> I thrive where technical depth meets people leadership: architecting solutions, mentoring engineers, and improving developer experience so teams ship faster with confidence. On the side, for fun, I look after Lean Mean Clean Apps, a small family of open-source .NET templates.
+> On the side, for fun, I look after Lean Mean Clean Apps, a small family of open-source .NET templates. Each one ships with agents and skills that teach AI coding tools how the team builds things, so anyone can try the same ideas on their own code.
+>
+> I've been fortunate to call both Australia and the United States home, working across legal tech, food service, workflow automation and enterprise platforms.
+>
+> I thrive where technical depth meets people leadership, whether I'm architecting solutions, mentoring engineers, or improving developer experience so teams ship faster with confidence.
 >
 > Based in Wisconsin. Always happy to chat about engineering leadership, platform architecture, AI-assisted engineering or the Wisconsin tech community. I don't bite… often.
 
-Keep it to these four short paragraphs. The detail of how we work with AI belongs in the Gradera experience entry or a post, not here.
+Keep the Gradera paragraph to one sentence. The detail of how we work with AI belongs in the Gradera experience entry or a post, not here.
 
 ## Words we use about AI
 
