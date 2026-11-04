@@ -19,10 +19,10 @@ Sponsors is the only place I take money for side projects. Every Lean Mean Clean
 
 ## Intro
 
-The Sponsors intro takes Markdown, so it opens with the Lean Mean Clean Apps banner and keeps the rest to a table and dot points. The images come straight from the [LeanMeanCleanApps/brand](https://github.com/LeanMeanCleanApps/brand) repo, so a rebuild there updates this page too. Paste everything inside the block below:
+The Sponsors intro takes Markdown, so it opens with the Sponsors banner (me building Lean Mean Clean Apps, from `banners/sponsors/`) and keeps the rest to a table and dot points. The template logos come straight from the [LeanMeanCleanApps/brand](https://github.com/LeanMeanCleanApps/brand) repo. Swap `stubble` in the banner link for whichever look is current. Paste everything inside the block below:
 
 ````markdown
-<a href="https://leanmeancleanapps.github.io/"><img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/social/png/banner.png" alt="Lean Mean Clean Apps: Clean Architecture templates for .NET, minus the ceremony." width="100%"></a>
+<a href="https://leanmeancleanapps.github.io/"><img src="https://raw.githubusercontent.com/stphnwlsh/stphnwlsh/main/brand/banners/sponsors/sponsors-stubble-1280x256.png" alt="Stephen Walsh builds Lean Mean Clean Apps" width="100%"></a>
 
 Hello! I'm Steve, a software engineering leader in Neenah, Wisconsin, by way of Australia. For fun, I look after **Lean Mean Clean Apps**, a small family of `dotnet new` templates with a low-ceremony take on Clean Architecture: fewer layers than an onion, more than a sandwich.
 
