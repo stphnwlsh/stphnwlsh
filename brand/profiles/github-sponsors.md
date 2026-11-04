@@ -19,17 +19,43 @@ Sponsors is the only place I take money for side projects. Every Lean Mean Clean
 
 ## Intro
 
-> Hello! I'm Steve, a software engineering leader in Neenah, Wisconsin, by way of Australia.
->
-> For fun, I look after **Lean Mean Clean Apps**, a small family of `dotnet new` templates with a low-ceremony take on Clean Architecture: fewer layers than an onion, more than a sandwich. There are five so far: Minimal API, MCP server, GraphQL (Hot Chocolate), Web API and Lambda Function. They share the same Application and Infrastructure layers, so learn one and you know them all.
->
-> Every template is ready for the real world: .NET 10, a 95% coverage gate, CodeQL and Trivy scans, optional token auth, Scalar docs, and a set of agents and skills that teach Claude Code, Copilot or Cursor how we build things, so your AI helpers write code that looks like your team wrote it.
->
-> It's all free and MIT licensed, and it'll stay that way. A release goes out on the 1st of every month and a maintenance release on the 15th, which takes evenings, weekends and a frankly irresponsible amount of coffee.
->
-> If the templates have saved you a day of setup, sponsoring is the nicest way to say so. It keeps the releases coming and tells me people are actually using them, which is half the fun.
->
-> Docs: https://leanmeancleanapps.github.io
+The Sponsors intro takes Markdown, so it opens with the Lean Mean Clean Apps banner and keeps the rest to a table and dot points. The images come straight from the [LeanMeanCleanApps/brand](https://github.com/LeanMeanCleanApps/brand) repo, so a rebuild there updates this page too. Paste everything inside the block below:
+
+````markdown
+<a href="https://leanmeancleanapps.github.io/"><img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/social/png/banner.png" alt="Lean Mean Clean Apps: Clean Architecture templates for .NET, minus the ceremony." width="100%"></a>
+
+Hello! I'm Steve, a software engineering leader in Neenah, Wisconsin, by way of Australia. For fun, I look after **Lean Mean Clean Apps**, a small family of `dotnet new` templates with a low-ceremony take on Clean Architecture: fewer layers than an onion, more than a sandwich.
+
+## 🧑‍🍳 The templates
+
+| | Template | Good for |
+| :---: | --- | --- |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/minimalapi/png/minimalapi-circle-256.png" width="40" alt=""> | [**Minimal API**](https://leanmeancleanapps.github.io/minimalapi/) | Lean HTTP APIs with Scalar docs |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/mcp/png/mcp-circle-256.png" width="40" alt=""> | [**MCP**](https://leanmeancleanapps.github.io/mcp/) | Model Context Protocol servers for AI agents |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/graphql/png/graphql-circle-256.png" width="40" alt=""> | [**GraphQL**](https://leanmeancleanapps.github.io/graphql/) | Hot Chocolate APIs with DataLoaders and Nitro |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/webapi/png/webapi-circle-256.png" width="40" alt=""> | [**Web API**](https://leanmeancleanapps.github.io/webapi/) | Controller-based APIs, for the classicists |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/lambda/png/lambda-circle-256.png" width="40" alt=""> | [**Lambda Function**](https://leanmeancleanapps.github.io/lambda/) | AWS Lambda with Lambda Annotations |
+
+They all share the same Application and Infrastructure layers, so learn one and you know them all.
+
+## ✅ In every template
+
+- **.NET 10**, with warnings as errors and a **95% coverage gate**
+- **CodeQL and Trivy** scans on every pull request
+- **Optional token auth** you switch on with one setting
+- **Agents and skills** that teach Claude Code, Copilot or Cursor how we build things, so your AI helpers write code that looks like your team wrote it
+- **Free and MIT licensed**, and it'll stay that way
+
+## ☕ What your sponsorship pays for
+
+- A release on the **1st** of every month and a maintenance release on the **15th**
+- Evenings, weekends and a frankly irresponsible amount of coffee
+- Proof that people are actually using these things, which is half the fun
+
+If the templates have saved you a day of setup, sponsoring is the nicest way to say so. Thank you! 🙏
+
+**[Read the docs →](https://leanmeancleanapps.github.io/)**
+````
 
 ## Goal
 
