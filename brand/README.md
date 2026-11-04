@@ -26,6 +26,7 @@ Swap `<look>` for one of the keys above and `<theme>` for `paper` (light) or `na
 | GitHub profile README | `banners/<look>-paper/…-github-readme-1280x320.png` and `banners/<look>-navy/…-github-readme-1280x320.png` together in a `<picture>`, so dark mode gets navy (see the profile README) |
 | LinkedIn banner | `banners/<look>-navy/<look>-navy-linkedin-1584x396.png` (paper melts into LinkedIn's off-white page) |
 | X and Bluesky header | `banners/<look>-<theme>/<look>-<theme>-social-header-1500x500.png` |
+| GitHub Sponsors intro | `banners/sponsors/sponsors-<look>-1280x256.png` (me building Lean Mean Clean Apps, shorter than a profile banner; the LMCA ring is a copy in `logos/lmca/` from LeanMeanCleanApps/brand) |
 | Medium profile header | `banners/medium/medium-header-navy-3000x450.png` (no face or name, because Medium shows both under it; `paper` works too) |
 | Link previews (Open Graph) | `banners/<look>-<theme>/<look>-<theme>-social-card-1200x630.png` |
 | November, any of the above | `banners/movember/movember-<size>.png`, and `banners/medium/medium-header-movember-3000x450.png` on Medium |

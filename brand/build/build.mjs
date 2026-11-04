@@ -243,6 +243,24 @@ function mediumHeader(theme) {
 </svg>`;
 }
 
+// The GitHub Sponsors banner: me on my navy, building Lean Mean Clean Apps. Shorter than a profile banner,
+// because it sits at the top of the Sponsors intro. The LMCA ring is a copy from LeanMeanCleanApps/brand.
+const SPONSORS = { w: 1280, h: 256 };
+const svgData = p => `data:image/svg+xml;base64,${readFileSync(p).toString('base64')}`;
+function sponsorsBanner(look) {
+  const { w, h } = SPONSORS, t = THEMES.navy, r = 92, cx = 128, cy = h / 2;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+<rect width="${w}" height="${h}" fill="${t.bg}"/>
+<image href="${svgData(at('logos/lmca/org-spectrum.svg'))}" x="990" y="-70" width="400" height="400"/>
+<clipPath id="disc"><circle cx="${cx}" cy="${cy}" r="${r}"/></clipPath>
+<circle cx="${cx}" cy="${cy}" r="${r}" fill="${t.disc}"/>
+<image href="${img(avatar(look))}" x="${cx - r * 1.1}" y="${cy - r}" width="${r * 2.2}" height="${r * 2.2}" clip-path="url(#disc)"/>
+<text x="256" y="84" font-family="Inter" font-weight="600" font-size="28" fill="${t.tagline}">${esc(tokens.person.name)} builds</text>
+<text x="254" y="148" font-family="Inter" font-weight="700" font-size="60" letter-spacing="-1.5" fill="${t.ink}">Lean Mean Clean Apps</text>
+<text x="257" y="192" font-family="Inter" font-size="24" fill="${t.muted}">Clean Architecture templates for .NET, minus the ceremony.</text>
+</svg>`;
+}
+
 const render = (svg, file, width) => writeFileSync(file, new Resvg(svg, {
   font: fontOpts,
   fitTo: width ? { mode: 'width', value: width } : { mode: 'original' },
@@ -261,6 +279,9 @@ for (const [key, sz] of Object.entries(SIZES)) render(banner(key, sz, 'movember'
 
 mkdirSync(at('banners/medium'));
 for (const theme of ['navy', 'paper', 'movember']) render(mediumHeader(theme), at(`banners/medium/medium-header-${theme}-3000x450.png`));
+
+mkdirSync(at('banners/sponsors'));
+for (const look of LOOKS.filter(l => l !== 'movember')) render(sponsorsBanner(look), at(`banners/sponsors/sponsors-${look}-1280x256.png`), SPONSORS.w * 2);
 
 fresh('movember-posts');
 for (const [key, p] of Object.entries(POSTS)) render(post(key, p), at(`movember-posts/movember-${key}.png`));
