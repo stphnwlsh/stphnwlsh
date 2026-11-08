@@ -10,7 +10,7 @@
 
 **Husband · Father · Software Engineer · Mentor · Learner · Leader**
 
-I'm a software engineering leader in Neenah, Wisconsin, by way of Australia, happiest where leading teams meets staying hands-on in the code. I look after Lean Mean Clean Apps, write the odd post about .NET and engineering careers, and grow a questionable moustache every November to raise money for Movember. The rest of the time I'm drinking coffee and trying to balance it all with being a husband and father. Say hi, I don't bite… often.
+I'm a software engineering leader in Neenah, Wisconsin, by way of Australia, happiest where leading teams meets staying hands-on in the code. By day I lead a distributed team at Gradera delivering a new multi-tenant product, mostly in .NET, with AI-assisted, spec-driven development as a team practice. After hours I look after Lean Mean Clean Apps, write the odd post about .NET and engineering careers, and grow a questionable moustache every November to raise money for Movember. The rest of the time I'm drinking coffee and trying to balance it all with being a husband and father. Say hi, I don't bite… often.
 
 This November the razor is on holiday while I grow a mo for [Movember](https://movember.com/m/stephenwalsh). I've got more than one reason: my Dad, who won his fight against prostate cancer, my friend Bryan, who's in remission after his, and Derrick and Sean, who went far too soon. If you'd like to help change the face of men's health, every donation counts, and the mo needs all the encouragement it can get.
 
@@ -23,6 +23,8 @@ This November the razor is on holiday while I grow a mo for [Movember](https://m
 - [Clean GraphQL API](https://github.com/LeanMeanCleanApps/CleanGraphQLApi): a GraphQL API on Hot Chocolate
 - [Clean Web API](https://github.com/LeanMeanCleanApps/CleanWebApi): an ASP.NET Core Web API with controllers
 - [Clean Lambda Function](https://github.com/LeanMeanCleanApps/CleanLambdaFunction): an AWS Lambda function shipped as a container image
+
+More than 180,000 downloads on [NuGet](https://www.nuget.org/profiles/stphnwlsh) so far, and every line of it is on [GitHub](https://github.com/LeanMeanCleanApps). If one of them has saved you a week, [GitHub Sponsors](https://github.com/sponsors/stphnwlsh) is how to say thanks.
 
 ## Things I've written
 
