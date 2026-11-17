@@ -16,7 +16,7 @@ This November the razor is on holiday while I grow a mo for [Movember](https://m
 
 ## What I tinker with
 
-[Lean Mean Clean Apps](https://leanmeancleanapps.github.io) is what I build when the kids are asleep: five `dotnet new` templates with a low-ceremony take on Clean Architecture. Fewer layers than an onion, more than a sandwich. No investors, no roadmap deck, just a small team (me) having fun and giving it away.
+[Lean Mean Clean Apps](https://leanmeanclean.dev) is what I build when the kids are asleep: five `dotnet new` templates with a low-ceremony take on Clean Architecture. Fewer layers than an onion, more than a sandwich. No investors, no roadmap deck, just a small team (me) having fun and giving it away.
 
 - [Clean Minimal API](https://github.com/LeanMeanCleanApps/CleanMinimalApi): an ASP.NET Core Minimal API
 - [Clean Model Context Protocol](https://github.com/LeanMeanCleanApps/CleanModelContextProtocol): an MCP server on the official C# SDK
