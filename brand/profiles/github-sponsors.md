@@ -22,7 +22,7 @@ Sponsors is the only place I take money for side projects. Every Lean Mean Clean
 The Sponsors intro takes Markdown, so it opens with the Sponsors banner (me building Lean Mean Clean Apps, from `banners/sponsors/`) and keeps the rest to a table and dot points. The template logos come straight from the [LeanMeanCleanApps/brand](https://github.com/LeanMeanCleanApps/brand) repo. Swap `stubble` in the banner link for whichever look is current. Paste everything inside the block below:
 
 ````markdown
-<a href="https://leanmeancleanapps.github.io/"><img src="https://raw.githubusercontent.com/stphnwlsh/stphnwlsh/main/brand/banners/sponsors/sponsors-stubble-1280x256.png" alt="Stephen Walsh builds Lean Mean Clean Apps" width="100%"></a>
+<a href="https://leanmeanclean.dev/"><img src="https://raw.githubusercontent.com/stphnwlsh/stphnwlsh/main/brand/banners/sponsors/sponsors-stubble-1280x256.png" alt="Stephen Walsh builds Lean Mean Clean Apps" width="100%"></a>
 
 Hello! I'm Steve, a software engineering leader in Neenah, Wisconsin, by way of Australia. For fun, I look after **Lean Mean Clean Apps**, a small family of `dotnet new` templates with a low-ceremony take on Clean Architecture: fewer layers than an onion, more than a sandwich.
 
@@ -30,11 +30,11 @@ Hello! I'm Steve, a software engineering leader in Neenah, Wisconsin, by way of 
 
 | | Template | Good for |
 | :---: | --- | --- |
-| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/minimalapi/png/minimalapi-circle-256.png" width="40" alt=""> | [**Minimal API**](https://leanmeancleanapps.github.io/minimalapi/) | Lean HTTP APIs with Scalar docs |
-| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/mcp/png/mcp-circle-256.png" width="40" alt=""> | [**MCP**](https://leanmeancleanapps.github.io/mcp/) | Model Context Protocol servers for AI agents |
-| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/graphql/png/graphql-circle-256.png" width="40" alt=""> | [**GraphQL**](https://leanmeancleanapps.github.io/graphql/) | Hot Chocolate APIs with DataLoaders and Nitro |
-| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/webapi/png/webapi-circle-256.png" width="40" alt=""> | [**Web API**](https://leanmeancleanapps.github.io/webapi/) | Controller-based APIs, for the classicists |
-| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/lambda/png/lambda-circle-256.png" width="40" alt=""> | [**Lambda Function**](https://leanmeancleanapps.github.io/lambda/) | AWS Lambda with Lambda Annotations |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/minimalapi/png/minimalapi-circle-256.png" width="40" alt=""> | [**Minimal API**](https://leanmeanclean.dev/minimalapi/) | Lean HTTP APIs with Scalar docs |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/mcp/png/mcp-circle-256.png" width="40" alt=""> | [**MCP**](https://leanmeanclean.dev/mcp/) | Model Context Protocol servers for AI agents |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/graphql/png/graphql-circle-256.png" width="40" alt=""> | [**GraphQL**](https://leanmeanclean.dev/graphql/) | Hot Chocolate APIs with DataLoaders and Nitro |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/webapi/png/webapi-circle-256.png" width="40" alt=""> | [**Web API**](https://leanmeanclean.dev/webapi/) | Controller-based APIs, for the classicists |
+| <img src="https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/logos/lambda/png/lambda-circle-256.png" width="40" alt=""> | [**Lambda Function**](https://leanmeanclean.dev/lambda/) | AWS Lambda with Lambda Annotations |
 
 They all share the same Application and Infrastructure layers, so learn one and you know them all.
 
@@ -55,7 +55,7 @@ They all share the same Application and Infrastructure layers, so learn one and 
 
 If the templates have saved you a day of setup, sponsoring is the nicest way to say so. Thank you! 🙏
 
-**[Read the docs →](https://leanmeancleanapps.github.io/)**
+**[Read the docs →](https://leanmeanclean.dev/)**
 ````
 
 ## Goal
