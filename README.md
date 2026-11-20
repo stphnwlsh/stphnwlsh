@@ -37,6 +37,6 @@ Every so often I have an opinion too long for a Slack message. These are the one
 
 ## Find me elsewhere
 
-[LinkedIn](https://www.linkedin.com/in/stphnwlsh/) · [Medium](https://stphnwlsh.medium.com/) · [Personal Website](https://stphnwlsh.github.io) · [GitHub Sponsors](https://github.com/sponsors/stphnwlsh)
+[LinkedIn](https://www.linkedin.com/in/stphnwlsh/) · [Medium](https://stphnwlsh.medium.com/) · [Personal Website](https://stphnwlsh.dev) · [GitHub Sponsors](https://github.com/sponsors/stphnwlsh)
 
 <sub>The banner, avatars and the rest of the look live in my [brand kit](./brand). Yes, even my face has a build script.</sub>
